@@ -22,13 +22,19 @@ fn main() {
         let mut f_n2 = 0;
 
         for x in 0..sequence_length {
+            let mut num_str = String::new();
             if x < 2 {
-                println!("{}", x);
+                num_str = x.to_string();
             } else {
                 let f_n = f_n1 + f_n2;
-                println!("{}", f_n);
+                num_str = f_n.to_string();
                 f_n2 = f_n1;
                 f_n1 = f_n;
+            }
+            if x < sequence_length - 1 {
+                print!("{}, ", num_str);
+            } else {
+                println!("{}", num_str);
             }
         }
     }
