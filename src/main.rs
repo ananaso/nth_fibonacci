@@ -22,7 +22,7 @@ fn main() {
         let mut f_n2 = 0;
 
         for x in 0..sequence_length {
-            let mut num_str = String::new();
+            let num_str : String;
             if x < 2 {
                 num_str = x.to_string();
             } else {
