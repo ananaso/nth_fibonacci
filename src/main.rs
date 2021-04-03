@@ -18,8 +18,8 @@ fn main() {
             Err(_) => continue,
         };
 
-        let mut f_n1 = 1;
-        let mut f_n2 = 0;
+        let mut f_n1 : u128 = 1;
+        let mut f_n2 : u128 = 0;
 
         for x in 0..sequence_length {
             let num_str : String;
